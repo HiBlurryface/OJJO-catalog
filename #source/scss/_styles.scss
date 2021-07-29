@@ -60,6 +60,7 @@ $Gilr: 'Gilroy';
 $NotoS: 'Noto Serif';
 
 body {
+	background: #F9F9F9;
 	@media (max-width: 425px) {
 		&.lock {
 			overflow: hidden;

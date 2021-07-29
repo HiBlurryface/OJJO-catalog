@@ -15,3 +15,16 @@ window.onscroll = function showHeader() {
         header.classList.remove('active');
     }
 }
+
+// filters
+$(document).ready(function () {
+    $('.filters-btn').click(function (event) {
+        if ($(event.target).hasClass('active')) {
+            $('.filters-choose, .filters-btn').removeClass('active');
+        } else {
+            $('.filters-choose, .filters-btn').removeClass('active');
+            $(event.target).addClass('active');
+            $(event.target).parent().find('.filters-choose').addClass('active');
+        }
+    })
+})
