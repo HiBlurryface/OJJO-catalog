@@ -95,6 +95,7 @@
 	&__block {
 		max-width: 350px;
 		width: 100%;
+		transition: all 0.3s ease;
 		@media (min-width: 1151px) {
 			padding: 35px;
 		}
@@ -143,10 +144,25 @@
 			color: #333;
 			padding-top: 7px;
 		}
+		@media (min-width: 769px) {
+			&:hover {
+				transform: scale(1.1);
+				transition: all 0.3s ease;
+			}	
+		}
+		&:hover .product__block-price {
+			&:after {
+				position: absolute;
+				content: "Купить";
+				left: 0;
+			}
+		}
 		&-price {
+			position: relative;
 			display: flex;
-			align-items: center;
 			justify-content: center;
+			align-items: center;
+			overflow: hidden;
 			width: 125px;
 			height: 41px;
 			margin: 0px auto;
@@ -160,6 +176,22 @@
 			text-transform: uppercase;
 			color: #fff;
 			background: #333;
+			&:after {
+				position: absolute;
+				content: "Купить";
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background: #000;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: -100%;
+				transition: all 0.3s ease;
+				@media (max-width: 768px) {
+					left: 0;
+				}
+			}
 		}
 	}
 	&__btn {
