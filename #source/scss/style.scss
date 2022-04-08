@@ -79,7 +79,7 @@
 	}
 }
 // product 
-.product {
+.product { 
 	&__row {
 		display: flex;
 		justify-content: space-between;
@@ -178,7 +178,7 @@
 			background: #333;
 			&:after {
 				position: absolute;
-				content: "Купить";
+				content: "Придбати";
 				display: flex;
 				justify-content: center;
 				align-items: center;
@@ -265,10 +265,10 @@
 				margin-top: 20px;
 			}
 			& ~ .about__info-btn:after {
-				content: "Читать полностью";
+				content: "Читати повністю";
 			}
 			&:checked ~ .about__info-btn:after {
-				content: "Скрыть"
+				content: "Приховати"
 			}
 			&:checked ~ .about__info-limited {
 				max-height: none;

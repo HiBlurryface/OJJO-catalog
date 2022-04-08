@@ -969,7 +969,7 @@ body {
 
 .product__block:hover .product__block-price:after {
   position: absolute;
-  content: "Купить";
+  content: "Придбати";
   left: 0;
 }
 
@@ -1129,11 +1129,11 @@ body {
 }
 
 .about__info-checker ~ .about__info-btn:after {
-  content: "Читать полностью";
+  content: "Читати повністю";
 }
 
 .about__info-checker:checked ~ .about__info-btn:after {
-  content: "Скрыть";
+  content: "Приховати";
 }
 
 .about__info-checker:checked ~ .about__info-limited {
